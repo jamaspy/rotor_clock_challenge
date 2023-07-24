@@ -1,0 +1,10 @@
+@use '../../../../styles/colors.scss' as colors;
+.seconds_hand {
+  position: absolute;
+  width: 2px;
+  height: 118px;
+  background: colors.$seconds_hand;
+  top: 10.5%;
+  left: 50%;
+  transform-origin: bottom;
+}

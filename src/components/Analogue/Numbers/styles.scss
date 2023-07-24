@@ -1,0 +1,13 @@
+.numbers_container {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+}
+
+.hour {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  text-align: center;
+}

@@ -1,0 +1,13 @@
+@use '../../../styles/colors.scss' as colors;
+.clock_face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: colors.$clock_face;
+  border: 1px solid colors.$black;
+  box-shadow: 2px 10px 10px colors.$shadow_gray;
+}

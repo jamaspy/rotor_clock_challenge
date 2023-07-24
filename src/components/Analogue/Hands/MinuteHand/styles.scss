@@ -1,0 +1,11 @@
+@use '../../../../styles/colors.scss' as colors;
+.minute_hand {
+  position: absolute;
+  width: 4px;
+  height: 120px;
+  background: colors.$minutes_hand;
+  top: 10%;
+  left: 49%;
+  transform-origin: bottom;
+  border-radius: 10px;
+}

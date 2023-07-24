@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Face as AnalogueFace } from "./components/Analogue/Face";
+import { DigitalDisplay } from "./components/Digital";
+import { useClock } from "./hooks/useClock";
+import "./App.scss";
+const App = () => {
+  const { seconds, minutes, hours, secondsAngle, minutesAngle, hoursAngle } =
+    useClock();
 
-function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <AnalogueFace
+        hoursAngle={hoursAngle}
+        minutesAngle={minutesAngle}
+        secondsAngle={secondsAngle}
+      />
+
+      <DigitalDisplay hours={hours} minutes={minutes} seconds={seconds} />
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,11 @@
+@use '../../../../styles/colors.scss' as colors;
+.hour_hand {
+  position: absolute;
+  width: 6px;
+  height: 100px;
+  background: colors.$hours_hand;
+  top: 17%;
+  left: 49%;
+  transform-origin: bottom;
+  border-radius: 10px;
+}
